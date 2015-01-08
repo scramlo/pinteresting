@@ -93,7 +93,7 @@ GEM
     nokogiri (1.6.5)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
-    paperclip (3.5.4)
+    paperclip (4.2.1)
       activemodel (>= 3.0.0)
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
@@ -186,7 +186,7 @@ DEPENDENCIES
   devise (~> 3.4.1)
   jbuilder (~> 2.0)
   jquery-rails
-  paperclip (~> 3.0)
+  paperclip (~> 4.2)
   pg
   rails (= 4.2.0)
   rails_12factor
