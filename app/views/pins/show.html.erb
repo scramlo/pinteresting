@@ -3,7 +3,7 @@
   <div class="col-md-offset-2 col-md-8">
     <div class="panel panel-default">
       <div class="panel-heading center">
-        <%= image_tag @pin.image.url(:full), class: 'img-responsive' %>
+        <%= image_tag @pin.image.url(:full), class: 'img-responsive center-block' %>
       </div>
       <div class="panel-body">
         <p><%= @pin.description %></p>
@@ -11,9 +11,11 @@
 
         <% if @pin.user == current_user %>
         <hr>
+
           <%= link_to edit_pin_path(@pin) do %>
           <span class="glyphicon glyphicon-edit"></span> Edit Pin
           <% end %>
+
           <%= link_to @pin, class: "pull-right", method: :delete, data: { confirm: 'Are you sure?' } do %>
           <span class="glyphicon glyphicon-ban-circle"></span> Delete Pin
           <% end %>
