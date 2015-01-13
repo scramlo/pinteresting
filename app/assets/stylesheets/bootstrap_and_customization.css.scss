@@ -1,9 +1,3 @@
-$body-bg: #ecf0f1;
-$btn-info-bg: #c0392b;
+$panel-border-radius: 8px;
 @import "bootstrap-sprockets";
 @import 'bootstrap';
-
-#mainjumbo {
-   background-color: rgba(0, 0, 0, 0.5);
-   color:white;
-}
