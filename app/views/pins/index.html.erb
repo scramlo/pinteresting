@@ -6,7 +6,9 @@
       <div class="panel-body">
         <p><strong><%= pin.description %></strong></p>
         <hr>
-        <span class="glyphicon glyphicon-user"></span> <%= pin.user.email if pin.user %>
+        <span class="glyphicon glyphicon-user"></span>
+        <%= pin.user.first_name if pin.user %>
+        <%= pin.user.last_name if pin.user %>
         <% if pin.user == current_user %>
         <p>
           <%= link_to edit_pin_path(pin), class: "pull-right" do %>
